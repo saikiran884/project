@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Your Name - Web Developer Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #bb0a1e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 100px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        .team-history, .team-achievements, .team-schedule, .players {
+            margin-bottom: 30px;
+        }
+
+        .players img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .player-card {
+            display: inline-block;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .schedule-table th, .schedule-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .schedule-table th {
+            background-color: #c8102e;
+            color: white;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        form label {
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        form button {
+            padding: 10px;
+            background-color: #bb0a1e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #c8102e;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home">
+        <header>
+            <h1>Hi, we are team alpha</h1>
+            <p>Web Developer | Creating beautiful, responsive websites</p>
+        </header>
+    </section>
+
+    <section id="about">
+        <h2>About Our Team</h2>
+        <p>
+            We are passionate web developers with experience in HTML, CSS, JavaScript, and React. We love building clean and user-friendly websites that help solve real-world problems.
+        </p>
+        <p>
+            Our goal is to continue learning new technologies and creating even more amazing projects.
+        </p>
+        <h3>Technologies We Use:</h3>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Git/GitHub</li>
+            <li>Responsive Web Design</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>Created a Sports Website</h3>
+            <p>We created a sports website for RCB.</p>
+            <a href="https://www.royalchallengers.com/" target="_blank">View in RCB</a><br>
+            <img src="https://via.placeholder.com/400x300" alt="Sports Website Screenshot">
+        </div>
+
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>We created a personal portfolio website using HTML, CSS, and JavaScript.</p>
+            <a href="https://github.com/yourgithubusername/e-commerce-site" target="_blank">View on GitHub</a>
+            <img src="https://via.placeholder.com/400x300" alt="E-commerce Website Screenshot">
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out if you'd like to collaborate or just want to chat about web development!</p>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&#169; 2025 Team Alpha. All rights reserved.</p>
+        <p><a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a> | <a href="https://github.com/yourgithubusername" target="_blank">GitHub</a></p>
+    </footer>
+
+</body>
+</html>
